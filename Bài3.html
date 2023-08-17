@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function thamso(a, b){
+            let sum=a+b;
+            if (a>b){
+                alert("Số đầu tiên bạn nhập lớn hơn số bạn nhập ở lần thứ hai!")
+            }else {
+                alert(`Tổng của 2 số là ${sum}`)
+            }
+        }
+        function bai3(){
+            let num1=+prompt("Nhập số đầu tiên:"); //5
+            let num2=+prompt("Nhập số thứ hai:");
+            thamso(num1, num2);
+        }
+    </script>
+</head>
+<body>
+<b>Bài 3: Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng. Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.</b>
+<button onclick="bai3()">Thực hiện</button>
+</body>
+</html>

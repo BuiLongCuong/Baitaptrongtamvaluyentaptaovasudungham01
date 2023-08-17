@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+      function thamso(a){
+          return a+1;
+      }
+      function doiso(){
+          let num1=5;
+          let ketqua= thamso(num1);
+          document.getElementById("result").innerHTML= ketqua;
+      }
+    </script>
+</head>
+<body>
+<b>Bài 2: Tạo hàm nhận vào một đối số dạng số, tăng giá trị đối số đó lên 1 và trả lại giá trị cho lời gọi hàm. Gọi hàm từ trong phần body của trang web và hiển thị kết quả lên màn hình.</b>
+<button onclick="doiso()">Hiển thị kết quả</button>
+<p id="result"></p>
+</body>
+</html>

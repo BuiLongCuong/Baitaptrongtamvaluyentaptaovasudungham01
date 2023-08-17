@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ngoisao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    let chomsao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+    function dotim(str){
+        let indexngoisao= ngoisao.indexOf(str)
+        if(indexngoisao === -1){
+            result= "Không tìm thấy"
+        }else {
+            let result = chomsao[indexngoisao];
+            return result;
+        }
+    }
+    let nhapvao=prompt("Nhập tên ngôi sao:")
+    let ketqua=dotim(nhapvao);
+    document.write(`Ngôi sao ${nhapvao} thuộc chòm sao ${ketqua}`)
+</script>
+</body>
+</html>

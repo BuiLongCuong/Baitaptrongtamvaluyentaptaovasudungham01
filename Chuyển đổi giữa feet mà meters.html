@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Chuyển đổi giữa feet mà meters</h1>
+<script>
+let a=+prompt("Nhập foot:");
+let b=+prompt("Nhập metter:");
+let c;
+let d;
+function footTometter(a){
+    let c=0.305*a;
+    return c;
+}
+function metterTofoot(b){
+    let d=0.305*b;
+    return d;
+}
+document.write(`${a} foot = ${footTometter(a)} metter <br>`);
+document.write(`${b} metter = ${metterTofoot(b)} foot `);
+
+</script>
+</body>
+</html>
